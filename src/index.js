@@ -16,7 +16,7 @@ app.use('/',displayTaskRouter)
 app.use('/',deleteRouter);
 app.use('/',updateRouter);
 app.use('/',registerRoute);
-const PORT=3001;
-app.listen(PORT,()=>{
+const port= process.env.PORT||3001;
+app.listen(port,()=>{
     console.log("server is up");
 })
